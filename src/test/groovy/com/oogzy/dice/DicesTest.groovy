@@ -15,8 +15,7 @@ public class DicesTest extends TestCase
 	public void testToString()
 	{
 		Dice dice = new Dice(20)
-        String result = dice.toString()
-		assert "D20".equals(result)
+		assertEquals("D20", dice.toString())
 	}
 
 	@Test
