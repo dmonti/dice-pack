@@ -20,10 +20,7 @@ protected class DiceResults
 	public int sum()
 	{
 		int sum = 0
-		for (int value : getRolls())
-		{
-			sum += value
-		}
+		rolls.each({ sum += it })
 		return sum
 	}
 }
