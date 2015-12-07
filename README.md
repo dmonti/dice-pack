@@ -2,11 +2,11 @@ Dice v1.0
 ===
 Exemplos:
 
-    Dice dice = new Dice(20)
-    int result = dice.roll() // Roll the dice one time.
+    Dice dice = new Dice(20) // Creates a dice with 20 sides.
+    int result = dice.roll() // Roll the dice one time and get the result.
 
     DiceResults result = dice.roll(10) // Roll the dice 10 times.
-    result.sum() // Get the sum of all 10 dice rolls.
+    result.sum() // Get the sum of all dice rolls.
 
 #### Default dices:
 
