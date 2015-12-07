@@ -1,5 +1,6 @@
+# "temporary" build files
+build
 .gradle
-build/
 
 # Ignore Gradle GUI config
 gradle-app.setting
