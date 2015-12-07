@@ -1,4 +1,4 @@
-Dice v1.0
+RPG Dice v1.0
 ===
 Exemplos:
 
