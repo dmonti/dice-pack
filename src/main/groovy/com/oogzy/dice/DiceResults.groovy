@@ -12,7 +12,12 @@ protected class DiceResults
         this.rolls = rolls
     }
 
-    public getRolls()
+    public Dice getDice()
+    {
+        return dice
+    }
+
+    public int[] getRolls()
     {
         return rolls
     }
@@ -20,7 +25,7 @@ protected class DiceResults
 	public int sum()
 	{
 		int sum = 0
-		rolls.each({ sum += it })
+		getRolls().each({ sum += it })
 		return sum
 	}
 }
