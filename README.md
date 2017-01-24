@@ -1,6 +1,6 @@
-RPG Dice v1.0
+Dice v1.0
 ===
-Exemplos:
+Examples:
 
     Dice dice = new Dice(20) // Creates a dice with 20 sides.
     int result = dice.roll() // Roll the dice one time and get the result.
