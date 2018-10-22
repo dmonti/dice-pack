@@ -1,13 +1,13 @@
+plugins {
+  id "org.sonarqube" version "2.6"
+}
+
 apply plugin: "groovy"
 
 version = "1.0"
 
 repositories {
   mavenCentral()
-}
-
-plugins {
-  id "org.sonarqube" version "2.6"
 }
 
 dependencies {
