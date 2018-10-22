@@ -3,11 +3,15 @@ apply plugin: "groovy"
 version = "1.0"
 
 repositories {
-    mavenCentral()
+  mavenCentral()
+}
+
+plugins {
+  id "org.sonarqube" version "2.6"
 }
 
 dependencies {
-    compile "org.codehaus.groovy:groovy-all:2.4.5"
+  compile "org.codehaus.groovy:groovy-all:2.5.3"
 
-    testCompile "junit:junit:4.12"
+  testCompile "junit:junit:4.12"
 }
