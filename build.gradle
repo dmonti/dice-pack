@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-  compile "org.codehaus.groovy:groovy-all:2.5.3"
+  compile "org.codehaus.groovy:groovy-all:3.0.7"
 
   testCompile "junit:junit:4.13"
 }
