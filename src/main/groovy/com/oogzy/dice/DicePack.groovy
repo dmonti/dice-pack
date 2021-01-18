@@ -7,6 +7,7 @@ public class DicePack {
 	private static final Dice D10 = new Dice(10)
 	private static final Dice D12 = new Dice(12)
 	private static final Dice D20 = new Dice(20)
+	private static final Dice D100 = new Dice(100)
 
 	public static Dice getD4() {
 		return D4
@@ -30,5 +31,9 @@ public class DicePack {
 
 	public static Dice getD20() {
 		return D20
+	}
+
+	public static Dice getD100() {
+		return D100
 	}
 }
