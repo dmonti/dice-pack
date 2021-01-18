@@ -1,17 +1,19 @@
 plugins {
-  id "org.sonarqube" version "2.6"
+	id 'eclipse'
+	id 'groovy'
 }
 
-apply plugin: "groovy"
+version = '2.0'
 
-version = "1.0"
+sourceCompatibility = 11
+targetCompatibility = 11
 
 repositories {
-  mavenCentral()
+	jcenter()
 }
 
 dependencies {
-  compile "org.codehaus.groovy:groovy-all:2.5.3"
+	implementation 'org.codehaus.groovy:groovy-all:3.0.7'
 
-  testCompile "junit:junit:4.13"
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
 }
