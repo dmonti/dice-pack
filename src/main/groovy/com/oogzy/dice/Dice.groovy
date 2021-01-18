@@ -1,10 +1,6 @@
 package com.oogzy.dice
 
-import java.text.MessageFormat
-import java.util.Random
-
-public class Dice
-{
+public class Dice {
 	private static final Random RANDOM = new Random()
 
 	private final int sides
