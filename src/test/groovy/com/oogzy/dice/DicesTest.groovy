@@ -1,38 +1,30 @@
 package com.oogzy.dice
 
-import org.junit.Test
+import static org.junit.jupiter.api.Assertions.assertEquals
+import static org.junit.jupiter.api.Assertions.assertTrue
 
-import com.oogzy.rpg.dice.Dice
-import com.oogzy.rpg.dice.DicePack
+import org.junit.jupiter.api.Test
 
-import junit.framework.TestCase
-
-public class DicesTest extends TestCase
-{
+public class DicesTest {
 	private static final int ROLL_TIMES = 1000
 
 	@Test
-	public void testToString()
-	{
+	public void testToString() {
 		Dice dice = new Dice(20)
 		assertEquals("D20", dice.toString())
 	}
 
 	@Test
-	public void testRoll()
-	{
-		for (int i = 0; i < ROLL_TIMES; i++)
-		{
+	public void testRoll() {
+		for (int i = 0; i < ROLL_TIMES; i++) {
 			int score = DicePack.getD20().roll()
 			assertTrue(score >= 1 && score <= 20)
 		}
 	}
 
 	@Test
-	public void testRollXTimes()
-	{
-		for (int i = 0; i < ROLL_TIMES; i++)
-		{
+	public void testRollXTimes() {
+		for (int i = 0; i < ROLL_TIMES; i++) {
 			int score = DicePack.getD20().roll(3).sum()
 			assertTrue(score >= 3 && score <= 60)
 		}
